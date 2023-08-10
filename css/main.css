@@ -346,16 +346,20 @@ header h2 {
 .portfolio-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  /* was this something else before? */
+  /* align-items: stretch; */
   flex-flow: row wrap;
 }
 
 .home-portfolio-piece {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
+}
+.flex-grow {
+  flex-grow: 1;
 }
 
 .home-portfolio-piece h4 {
